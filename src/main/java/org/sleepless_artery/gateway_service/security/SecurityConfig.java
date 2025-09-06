@@ -40,7 +40,7 @@ public class SecurityConfig {
     @Bean
     public CorsWebFilter corsWebFilter() {
         CorsConfiguration corsConfig = new CorsConfiguration();
-        corsConfig.setAllowedOrigins(List.of("http://localhost", "http://localhost:80", "http://localhost:3000"));
+        corsConfig.setAllowedOrigins(List.of("http://localhost", "http://localhost:80"));
         corsConfig.addAllowedMethod("*");
         corsConfig.addAllowedHeader("*");
         corsConfig.setAllowCredentials(true);

@@ -61,7 +61,7 @@ public class JwtAuthenticationFilter extends AbstractGatewayFilterFactory<JwtAut
     }
 
     private boolean shouldSkipAuth(String path) {
-        return path.startsWith("/auth/") || path.startsWith("/actuator/");
+        return path.startsWith("/api/auth/") || path.startsWith("/actuator/") ;
     }
 
     public static class Config {}
